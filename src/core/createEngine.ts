@@ -7,7 +7,6 @@ export function createEngine(canvas: HTMLCanvasElement): Engine {
   const engine = new Engine(canvas, true, {
     preserveDrawingBuffer: false,
     stencil: true,
-    disableWebGL2Support: false,
   });
 
   // Handle window resize
