@@ -1,5 +1,3 @@
-import './style.css';
-
 import { settings } from './config';
 import { createEngine, createScene } from './core';
 import { InputSystem, RenderSystem } from './systems';
