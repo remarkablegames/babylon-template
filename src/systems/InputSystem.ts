@@ -70,42 +70,42 @@ export class InputSystem {
   /**
    * Check if a key is currently pressed
    */
-  public isKeyDown(key: string): boolean {
+  isKeyDown(key: string): boolean {
     return this.inputState.keys.has(key.toLowerCase());
   }
 
   /**
    * Check if any of the specified keys are pressed
    */
-  public isAnyKeyDown(keys: string[]): boolean {
+  isAnyKeyDown(keys: string[]): boolean {
     return keys.some((key) => this.isKeyDown(key));
   }
 
   /**
    * Get the current input state
    */
-  public getInputState(): InputState {
+  getInputState(): InputState {
     return { ...this.inputState };
   }
 
   /**
    * Check if left mouse button is pressed
    */
-  public isLeftButtonDown(): boolean {
+  isLeftButtonDown(): boolean {
     return this.inputState.leftButtonDown;
   }
 
   /**
    * Check if right mouse button is pressed
    */
-  public isRightButtonDown(): boolean {
+  isRightButtonDown(): boolean {
     return this.inputState.rightButtonDown;
   }
 
   /**
    * Cleanup input listeners
    */
-  public dispose() {
+  dispose() {
     const canvas = this.scene.getEngine().getRenderingCanvas();
     if (canvas) {
       // Listeners would need to be removed with references

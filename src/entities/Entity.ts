@@ -16,42 +16,42 @@ export abstract class Entity {
   /**
    * Get the underlying mesh
    */
-  public getMesh(): Mesh {
+  getMesh(): Mesh {
     return this.mesh;
   }
 
   /**
    * Get the entity's position
    */
-  public getPosition() {
+  getPosition() {
     return this.mesh.position.clone();
   }
 
   /**
    * Set the entity's position
    */
-  public setPosition(x: number, y: number, z: number) {
+  setPosition(x: number, y: number, z: number) {
     this.mesh.position.set(x, y, z);
   }
 
   /**
    * Called every frame
    */
-  public update() {
+  update() {
     // Override for per-entity logic
   }
 
   /**
    * Check if entity is disposed
    */
-  public getIsDisposed(): boolean {
+  getIsDisposed(): boolean {
     return this.isDisposed;
   }
 
   /**
    * Cleanup the entity
    */
-  public dispose() {
+  dispose() {
     if (!this.isDisposed) {
       this.mesh.dispose();
       this.isDisposed = true;

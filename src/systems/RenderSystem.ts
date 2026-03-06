@@ -17,14 +17,14 @@ export class RenderSystem {
   /**
    * Get the time elapsed since the last frame (in seconds)
    */
-  public getDeltaTime(): number {
+  getDeltaTime(): number {
     return this.deltaTime;
   }
 
   /**
    * Start the render loop
    */
-  public startRenderLoop(onFrame: (deltaTime: number) => void) {
+  startRenderLoop(onFrame: (deltaTime: number) => void) {
     this.lastTime = performance.now();
 
     this.engine.runRenderLoop(() => {
@@ -40,7 +40,7 @@ export class RenderSystem {
   /**
    * Stop the render loop
    */
-  public stopRenderLoop() {
+  stopRenderLoop() {
     this.engine.stopRenderLoop();
   }
 }

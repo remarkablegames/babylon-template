@@ -26,7 +26,7 @@ export class Player extends Entity {
   /**
    * Move the player in a direction
    */
-  public move(direction: Vector3, deltaTime: number) {
+  move(direction: Vector3, deltaTime: number) {
     const movement = direction.scale(this.moveSpeed * deltaTime);
     this.mesh.position.addInPlace(movement);
   }
@@ -34,14 +34,14 @@ export class Player extends Entity {
   /**
    * Set movement speed
    */
-  public setSpeed(speed: number) {
+  setSpeed(speed: number) {
     this.moveSpeed = speed;
   }
 
   /**
    * Update player
    */
-  public override update() {
+  override update() {
     // Override for player-specific update logic
   }
 }

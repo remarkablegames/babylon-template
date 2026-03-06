@@ -34,7 +34,7 @@ export class AssetLoader {
   /**
    * Load a texture
    */
-  public loadTexture(name: string, path: string): Texture {
+  loadTexture(name: string, path: string): Texture {
     const texture = new Texture(path, this.scene);
     this.loadedAssets.textures.set(name, texture);
     return texture;
@@ -43,7 +43,7 @@ export class AssetLoader {
   /**
    * Load a cube texture (for skyboxes)
    */
-  public loadCubeTexture(name: string, path: string): CubeTexture {
+  loadCubeTexture(name: string, path: string): CubeTexture {
     const texture = new CubeTexture(path, this.scene);
     this.loadedAssets.textures.set(name, texture);
     return texture;
@@ -52,7 +52,7 @@ export class AssetLoader {
   /**
    * Load a sound
    */
-  public loadSound(
+  loadSound(
     name: string,
     path: string,
     options?: { loop?: boolean; autoplay?: boolean; volume?: number },
@@ -77,21 +77,21 @@ export class AssetLoader {
   /**
    * Get a loaded texture
    */
-  public getTexture(name: string): BaseTexture | undefined {
+  getTexture(name: string): BaseTexture | undefined {
     return this.loadedAssets.textures.get(name);
   }
 
   /**
    * Get a loaded sound
    */
-  public getSound(name: string): Sound | undefined {
+  getSound(name: string): Sound | undefined {
     return this.loadedAssets.sounds.get(name);
   }
 
   /**
    * Load multiple assets
    */
-  public async loadAll(assets: {
+  async loadAll(assets: {
     textures?: { name: string; path: string }[];
     sounds?: { name: string; path: string }[];
   }): Promise<LoadedAssets> {
@@ -116,7 +116,7 @@ export class AssetLoader {
   /**
    * Dispose all loaded assets
    */
-  public dispose() {
+  dispose() {
     for (const texture of this.loadedAssets.textures.values()) {
       texture.dispose();
     }

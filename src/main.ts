@@ -34,9 +34,10 @@ renderSystem.startRenderLoop(() => {
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
     engine.stopRenderLoop();
-  } else {
-    renderSystem.startRenderLoop(() => {
-      // Update logic
-    });
+    return;
   }
+
+  renderSystem.startRenderLoop(() => {
+    // Update logic
+  });
 });

@@ -10,21 +10,21 @@ export class SceneManager {
   /**
    * Register a scene
    */
-  public addScene(name: string, scene: SceneBase) {
+  addScene(name: string, scene: SceneBase) {
     this.scenes.set(name, scene);
   }
 
   /**
    * Get a registered scene
    */
-  public getScene(name: string): SceneBase | undefined {
+  getScene(name: string): SceneBase | undefined {
     return this.scenes.get(name);
   }
 
   /**
    * Activate a scene
    */
-  public activateScene(name: string) {
+  activateScene(name: string) {
     const scene = this.scenes.get(name);
     if (!scene) {
       return;
@@ -43,14 +43,14 @@ export class SceneManager {
   /**
    * Get the current active scene
    */
-  public getCurrentScene(): SceneBase | null {
+  getCurrentScene(): SceneBase | null {
     return this.currentScene;
   }
 
   /**
    * Update the current scene
    */
-  public update() {
+  update() {
     if (this.currentScene) {
       this.currentScene.onUpdate();
     }
@@ -59,7 +59,7 @@ export class SceneManager {
   /**
    * Dispose all scenes
    */
-  public dispose() {
+  dispose() {
     for (const scene of this.scenes.values()) {
       scene.dispose();
     }

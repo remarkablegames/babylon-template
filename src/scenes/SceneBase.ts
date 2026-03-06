@@ -15,28 +15,28 @@ export abstract class SceneBase {
   /**
    * Called when the scene is activated
    */
-  public onActivate() {
+  onActivate() {
     // Override for scene activation
   }
 
   /**
    * Called when the scene is deactivated
    */
-  public onDeactivate() {
+  onDeactivate() {
     // Override to cleanup
   }
 
   /**
    * Called every frame while the scene is active
    */
-  public onUpdate() {
+  onUpdate() {
     // Override for per-frame logic
   }
 
   /**
    * Cleanup when scene is destroyed
    */
-  public dispose() {
+  dispose() {
     this.scene.dispose();
   }
 }
