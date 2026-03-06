@@ -7,53 +7,11 @@
 [![release](https://img.shields.io/github/v/release/remarkablegames/babylon-template)](https://github.com/remarkablegames/babylon-template/releases)
 [![build](https://github.com/remarkablegames/babylon-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/babylon-template/actions/workflows/build.yml)
 
-A template for building [Babylon.js](https://github.com/BabylonJS/Babylon.js) games.
+<kbd>babylon-template</kbd> is a template for building [Babylon.js](https://github.com/BabylonJS/Babylon.js) games.
 
-## Features
+Play the game on:
 
-- 🏗️ Modular architecture with organized source structure
-- 🎮 Scene management system
-- 🎯 Entity base class for game objects
-- ⌨️ Input handling system (keyboard/mouse)
-- 🔧 Asset loading utilities
-- 🐛 Debug inspector support
-- 📦 Vite build system with TypeScript
-
-## Project Structure
-
-```
-src/
-├── main.ts              # Entry point
-├── style.css            # Styles
-├── core/                # Engine setup
-│   ├── createEngine.ts
-│   ├── createScene.ts
-│   └── createCamera.ts
-├── scenes/              # Scene management
-│   ├── SceneBase.ts
-│   └── SceneManager.ts
-├── entities/            # Game entities
-│   ├── Entity.ts
-│   └── Player.ts
-├── systems/             # Game systems
-│   ├── InputSystem.ts
-│   └── RenderSystem.ts
-├── utils/               # Utilities
-│   └── assetLoader.ts
-├── config/              # Configuration
-│   └── settings.ts
-└── types/               # TypeScript types
-```
-
-## Getting Started
-
-The template includes a rotating cube example. To start building your game:
-
-1. Open `src/main.ts` - the main entry point
-2. Modify `src/core/createScene.ts` to customize your scene
-3. Add entities in `src/entities/`
-4. Use `src/systems/InputSystem.ts` for input handling
-5. Enable debug mode in `src/config/settings.ts` to use the Babylon.js Inspector
+- [remarkablegames](https://remarkablegames.org/babylon-template/)
 
 ## Prerequisites
 

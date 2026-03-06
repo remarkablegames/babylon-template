@@ -20,6 +20,13 @@ You're an expert engineer for this Babylon.js game.
   - Node.js 24
 - **File Structure:**
   - `src/` – game code
+    - `config/` – configuration
+    - `core/` – core game logic
+    - `entities/` – game entities
+    - `scenes/` – scene definitions
+    - `systems/` – game systems
+    - `types/` – TypeScript types
+    - `utils/` – utility functions
   - `public/` – game assets
 
 ## Tools you can use
