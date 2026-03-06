@@ -1,17 +1,8 @@
 import './style.css';
 
-import { ShowInspector } from '@babylonjs/inspector';
-
 import { settings } from './config';
 import { createEngine, createScene } from './core';
 import { InputSystem, RenderSystem } from './systems';
-
-/**
- * Babylon.js Template - Main Entry Point
- *
- * This template provides a structured foundation for building
- * Babylon.js games with a modular architecture.
- */
 
 // Get canvas element
 const canvas = document.getElementById('game') as HTMLCanvasElement;
@@ -22,9 +13,11 @@ const engine = createEngine(canvas);
 // Create scene
 const scene = createScene(engine);
 
-// Enable inspector in debug mode
+// Enable inspector in development (excluded from production)
 if (settings.debug) {
-  ShowInspector(scene, {});
+  void import('@babylonjs/inspector').then(({ ShowInspector }) => {
+    ShowInspector(scene, {});
+  });
 }
 
 // Create systems
