@@ -7,7 +7,7 @@
 [![release](https://img.shields.io/github/v/release/remarkablegames/babylon-template)](https://github.com/remarkablegames/babylon-template/releases)
 [![build](https://github.com/remarkablegames/babylon-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/babylon-template/actions/workflows/build.yml)
 
-<kbd>babylon-template</kbd> is a template for making [KAPLAY](https://kaplayjs.com/) games.
+<kbd>babylon-template</kbd> is a template for making [Babylon.js](https://github.com/BabylonJS/Babylon.js) games.
 
 Play the game on:
 
@@ -53,7 +53,7 @@ Update the files:
 - [ ] `package.json`
 - [ ] `public/app-icon.png`
 - [ ] `public/favicon.png`
-- [ ] `public/manifest.json`
+- [ ] `public/manifest.webmanifest`
 
 ## Environment Variables
 
