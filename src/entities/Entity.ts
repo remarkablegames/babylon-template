@@ -1,0 +1,60 @@
+import type { Mesh, Scene as BabylonScene } from '@babylonjs/core';
+
+/**
+ * Base class for game entities
+ */
+export abstract class Entity {
+  protected mesh: Mesh;
+  protected scene: BabylonScene;
+  private isDisposed = false;
+
+  constructor(mesh: Mesh) {
+    this.mesh = mesh;
+    this.scene = mesh.getScene();
+  }
+
+  /**
+   * Get the underlying mesh
+   */
+  public getMesh(): Mesh {
+    return this.mesh;
+  }
+
+  /**
+   * Get the entity's position
+   */
+  public getPosition() {
+    return this.mesh.position.clone();
+  }
+
+  /**
+   * Set the entity's position
+   */
+  public setPosition(x: number, y: number, z: number) {
+    this.mesh.position.set(x, y, z);
+  }
+
+  /**
+   * Called every frame
+   */
+  public update() {
+    // Override for per-entity logic
+  }
+
+  /**
+   * Check if entity is disposed
+   */
+  public getIsDisposed(): boolean {
+    return this.isDisposed;
+  }
+
+  /**
+   * Cleanup the entity
+   */
+  public dispose() {
+    if (!this.isDisposed) {
+      this.mesh.dispose();
+      this.isDisposed = true;
+    }
+  }
+}

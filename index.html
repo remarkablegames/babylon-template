@@ -5,7 +5,7 @@
     <link rel="icon" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Game created using Babylon Template" />
+    <meta name="description" content="Babylon Template" />
 
     <!--
       manifest.webmanifest provides metadata used when your web app is installed on a
@@ -13,37 +13,11 @@
     -->
     <link rel="manifest" href="/manifest.webmanifest" />
 
-    <!--
-      GitHub Corners. See https://github.com/remarkablemark/github-corners
-    -->
-    <% if (process.env.BUNDLE !== 'true') { %>
-    <script
-      src="https://unpkg.com/github-corners/dist/embed.min.js"
-      data-href="https://github.com/remarkablegames/babylon-template"
-      data-target="_blank"
-      async
-      defer
-    ></script>
-    <style>
-      .github-corner > svg {
-        opacity: 0.6;
-        transition: opacity 0.4s;
-      }
-      .github-corner:hover > svg {
-        opacity: 1;
-      }
-    </style>
-    <% } %>
-
     <title>Babylon Template | remarkablegames</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to play this game.</noscript>
-
-    <script type="module">
-      import kaplay from 'kaplay'
-      kaplay()
-    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <canvas id="game"></canvas>
     <script type="module" src="/src/main.ts"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

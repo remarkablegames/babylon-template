@@ -9,7 +9,7 @@
     "clean": "rm -rf dist",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "lint:tsc": "tsc --noEmit",
+    "lint:tsc": "tsc --project tsconfig.app.json",
     "prepare": "husky",
     "preview": "vite preview",
     "start": "vite --open"
@@ -17,8 +17,7 @@
   "homepage": "https://remarkablegames.org/babylon-template/",
   "dependencies": {
     "@babylonjs/core": "8.54.1",
-    "@babylonjs/inspector": "8.54.1",
-    "kaplay": "3001.0.19"
+    "@babylonjs/inspector": "8.54.1"
   },
   "devDependencies": {
     "@commitlint/cli": "20.4.3",

@@ -1,3 +1,5 @@
+import { resolve } from 'node:path';
+
 import { defineConfig } from 'vite';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
@@ -9,4 +11,9 @@ export default defineConfig({
     minifySyntax: false,
   },
   plugins: [createHtmlPlugin()],
+  resolve: {
+    alias: {
+      src: resolve(__dirname, './src'),
+    },
+  },
 });
