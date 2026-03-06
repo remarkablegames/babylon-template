@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/favicon.svg" width="200" alt="Babylon Template">
+  <img src="public/favicon.svg" width="250" alt="Babylon Template">
 </p>
 
 # Babylon Template
