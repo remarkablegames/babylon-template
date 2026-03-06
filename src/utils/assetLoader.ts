@@ -1,10 +1,8 @@
-import {
-  BaseTexture,
-  CubeTexture,
-  Scene,
-  Sound,
-  Texture,
-} from '@babylonjs/core';
+import { Sound } from '@babylonjs/core/Audio/sound';
+import { BaseTexture } from '@babylonjs/core/Materials/Textures/baseTexture';
+import { CubeTexture } from '@babylonjs/core/Materials/Textures/cubeTexture';
+import { Texture } from '@babylonjs/core/Materials/Textures/texture';
+import { Scene } from '@babylonjs/core/scene';
 
 /**
  * Asset loading results

@@ -1,5 +1,5 @@
-import type { Scene as BabylonScene } from '@babylonjs/core';
-import { Vector3 } from '@babylonjs/core';
+import { Vector3 } from '@babylonjs/core/Maths/math.vector';
+import type { Scene } from '@babylonjs/core/scene';
 
 /**
  * Input state for keyboard and mouse
@@ -15,10 +15,10 @@ export interface InputState {
  * Handles keyboard and mouse input
  */
 export class InputSystem {
-  private scene: BabylonScene;
+  private scene: Scene;
   private inputState: InputState;
 
-  constructor(scene: BabylonScene) {
+  constructor(scene: Scene) {
     this.scene = scene;
     this.inputState = {
       keys: new Set(),

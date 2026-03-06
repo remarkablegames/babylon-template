@@ -1,4 +1,4 @@
-import { Engine } from '@babylonjs/core';
+import { Engine } from '@babylonjs/core/Engines/engine';
 
 /**
  * Creates and configures the Babylon.js Engine

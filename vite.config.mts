@@ -6,6 +6,15 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 export default defineConfig({
   build: {
     assetsInlineLimit: 0,
+    target: 'esnext',
+    minify: 'esbuild',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          babylon: ['@babylonjs/core'],
+        },
+      },
+    },
   },
   plugins: [createHtmlPlugin()],
   resolve: {

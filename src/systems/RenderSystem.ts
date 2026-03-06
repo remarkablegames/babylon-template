@@ -1,15 +1,16 @@
-import type { Engine, Scene as BabylonScene } from '@babylonjs/core';
+import type { Engine } from '@babylonjs/core/Engines/engine';
+import type { Scene } from '@babylonjs/core/scene';
 
 /**
  * Manages the render loop and delta time
  */
 export class RenderSystem {
   private engine: Engine;
-  private scene: BabylonScene;
+  private scene: Scene;
   private lastTime = 0;
   private deltaTime = 0;
 
-  constructor(engine: Engine, scene: BabylonScene) {
+  constructor(engine: Engine, scene: Scene) {
     this.engine = engine;
     this.scene = scene;
   }

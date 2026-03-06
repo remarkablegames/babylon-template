@@ -2,9 +2,6 @@
  * Game configuration settings
  */
 export interface GameSettings {
-  /** Enable Babylon.js inspector */
-  debug: boolean;
-
   /** Enable physics engine */
   physics: boolean;
 
@@ -28,7 +25,6 @@ export interface GameSettings {
  * Default game settings
  */
 export const defaultSettings: GameSettings = {
-  debug: import.meta.env.DEV,
   physics: false,
   targetFrameRate: 60,
   audioEnabled: true,

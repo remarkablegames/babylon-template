@@ -1,5 +1,8 @@
-import type { Scene as BabylonScene, Vector3 } from '@babylonjs/core';
-import { Color3, MeshBuilder, StandardMaterial } from '@babylonjs/core';
+import { StandardMaterial } from '@babylonjs/core/Materials/standardMaterial';
+import { Color3 } from '@babylonjs/core/Maths/math.color';
+import type { Vector3 } from '@babylonjs/core/Maths/math.vector';
+import { MeshBuilder } from '@babylonjs/core/Meshes/meshBuilder';
+import type { Scene } from '@babylonjs/core/scene';
 
 import { Entity } from './Entity';
 
@@ -9,7 +12,7 @@ import { Entity } from './Entity';
 export class Player extends Entity {
   private moveSpeed: number;
 
-  constructor(scene: BabylonScene, position: Vector3) {
+  constructor(scene: Scene, position: Vector3) {
     // Create player mesh (sphere)
     const mesh = MeshBuilder.CreateSphere('player', { diameter: 1 }, scene);
     const material = new StandardMaterial('playerMaterial', scene);

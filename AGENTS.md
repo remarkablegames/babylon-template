@@ -46,6 +46,20 @@ Follow these rules for all code you write:
 - Classes: PascalCase (`GameManager`, `Enemy`)
 - Constants: UPPER_SNAKE_CASE (`PlayerConstants.MAX_HEALTH`, `Constants.ALPHA_DISABLE`)
 
+**Babylon.js imports:**
+
+Always import Babylon.js modules selectively from their specific paths to keep bundle sizes small:
+
+```ts
+// ✅ Good: Selective imports
+import { Engine } from '@babylonjs/core/Engines/engine';
+import { Scene } from '@babylonjs/core/scene';
+import { Vector3 } from '@babylonjs/core/Maths/math.vector';
+
+// ❌ Bad: Barrel imports (bloats bundle)
+import { Engine, Scene, Vector3 } from '@babylonjs/core';
+```
+
 Boundaries:
 
 - ✅ **Always:** Write to `src/`, run lint and type check before commits, follow naming conventions

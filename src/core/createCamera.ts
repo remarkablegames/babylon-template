@@ -1,5 +1,6 @@
-import type { Scene } from '@babylonjs/core';
-import { ArcRotateCamera, Vector3 } from '@babylonjs/core';
+import { ArcRotateCamera } from '@babylonjs/core/Cameras/arcRotateCamera';
+import { Vector3 } from '@babylonjs/core/Maths/math.vector';
+import type { Scene } from '@babylonjs/core/scene';
 
 /**
  * Creates and configures the default ArcRotateCamera

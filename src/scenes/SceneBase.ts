@@ -1,13 +1,14 @@
-import type { Engine, Scene as BabylonScene } from '@babylonjs/core';
+import type { Engine } from '@babylonjs/core/Engines/engine';
+import type { Scene } from '@babylonjs/core/scene';
 
 /**
  * Base class for all game scenes
  */
 export abstract class SceneBase {
-  protected scene: BabylonScene;
+  protected scene: Scene;
   protected engine: Engine;
 
-  constructor(engine: Engine, scene: BabylonScene) {
+  constructor(engine: Engine, scene: Scene) {
     this.engine = engine;
     this.scene = scene;
   }

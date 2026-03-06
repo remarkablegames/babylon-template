@@ -1,11 +1,12 @@
-import type { Mesh, Scene as BabylonScene } from '@babylonjs/core';
+import type { Mesh } from '@babylonjs/core/Meshes/mesh';
+import type { Scene } from '@babylonjs/core/scene';
 
 /**
  * Base class for game entities
  */
 export abstract class Entity {
   protected mesh: Mesh;
-  protected scene: BabylonScene;
+  protected scene: Scene;
   private isDisposed = false;
 
   constructor(mesh: Mesh) {
