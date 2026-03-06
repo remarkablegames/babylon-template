@@ -1,4 +1,4 @@
-import { Sprite, Tag } from '../constants'
+import { Sprite, Tag } from '../constants';
 
 export function addEnemy(x: number, y: number) {
   const enemy = add([
@@ -6,7 +6,7 @@ export function addEnemy(x: number, y: number) {
     pos(x, y),
     anchor('center'),
     Tag.Enemy,
-  ])
+  ]);
 
-  return enemy
+  return enemy;
 }

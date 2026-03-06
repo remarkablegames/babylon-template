@@ -1,8 +1,8 @@
-import './style.css'
+import './style.css';
 
-import { start } from './scenes'
+import { start } from './scenes';
 
-start()
+start();
 
 // press F1
 // debug.inspect = true

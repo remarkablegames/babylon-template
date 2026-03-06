@@ -1,3 +1,3 @@
-import { addPlayer } from '../gameobjects'
+import { addPlayer } from '../gameobjects';
 
-export type Player = ReturnType<typeof addPlayer>
+export type Player = ReturnType<typeof addPlayer>;
