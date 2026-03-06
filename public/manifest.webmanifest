@@ -10,9 +10,10 @@
   "orientation": "landscape",
   "icons": [
     {
-      "src": "favicon.png",
-      "type": "image/png",
-      "sizes": "72x72"
+      "src": "./public/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ]
 }
