@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/favicon.svg" width="250" alt="Babylon Template">
+  <img src="public/logo.svg" width="250" alt="Babylon Template">
 </p>
 
 # Babylon Template
@@ -51,8 +51,7 @@ Update the files:
 - [ ] `README.md`
 - [ ] `index.html`
 - [ ] `package.json`
-- [ ] `public/app-icon.svg`
-- [ ] `public/favicon.svg`
+- [ ] `public/logo.svg`
 - [ ] `public/manifest.webmanifest`
 
 ## Environment Variables

@@ -3,14 +3,13 @@
   "short_name": "Babylon Template",
   "description": "Babylon Template",
   "start_url": "./",
-  "scope": "./",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "orientation": "landscape",
   "icons": [
     {
-      "src": "favicon.svg",
+      "src": "./logo.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"

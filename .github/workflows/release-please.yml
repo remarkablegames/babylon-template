@@ -77,7 +77,7 @@ jobs:
           app-name: ${{ steps.vars.outputs.app_name }}
           app-version: ${{ env.VERSION }}
           window-title: ${{ steps.vars.outputs.window_title }}
-          icon-path: public/app-icon.svg
+          icon-path: public/logo.svg
         env:
           APPLE_SIGNING_IDENTITY: '-'
 
