@@ -1,9 +1,16 @@
 import { createEngine, createScene } from './core';
 import { InputSystem, RenderSystem } from './systems';
 
-const canvas = document.getElementById('game') as HTMLCanvasElement;
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const canvas = document.querySelector('canvas')!;
+const spinner = document.getElementById('spinner') as HTMLDivElement;
 const engine = createEngine(canvas);
 const scene = createScene(engine);
+
+// Hide spinner when scene is ready
+scene.onReadyObservable.addOnce(() => {
+  spinner.remove();
+});
 
 // Enable inspector only in development (excluded from production build)
 if (import.meta.env.DEV) {
