@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 0,
     target: 'esnext',
-    minify: 'esbuild',
+    minify: 'oxc',
     rolldownOptions: {
       output: {
         codeSplitting: {
