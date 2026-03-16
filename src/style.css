@@ -12,6 +12,10 @@ canvas {
   height: 100%;
 }
 
+canvas:focus {
+  outline: none;
+}
+
 #spinner {
   position: relative;
   top: 50%;
