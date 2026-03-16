@@ -8,10 +8,15 @@ export default defineConfig({
     assetsInlineLimit: 0,
     target: 'esnext',
     minify: 'esbuild',
-    rollupOptions: {
+    rolldownOptions: {
       output: {
-        manualChunks: {
-          babylon: ['@babylonjs/core'],
+        codeSplitting: {
+          groups: [
+            {
+              name: 'babylon',
+              test: /node_modules[\\/]@babylonjs[\\/]core/,
+            },
+          ],
         },
       },
     },
