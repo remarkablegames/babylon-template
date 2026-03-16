@@ -1,15 +1,19 @@
 import { createEngine, createScene } from './core';
 import { InputSystem, RenderSystem } from './systems';
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const canvas = document.querySelector('canvas')!;
-const spinner = document.getElementById('spinner') as HTMLDivElement;
+const canvas = document.querySelector<HTMLCanvasElement>('canvas');
+const spinner = document.querySelector<HTMLDivElement>('#spinner');
+
+if (!canvas) {
+  throw new Error('Game canvas not found');
+}
+
 const engine = createEngine(canvas);
 const scene = createScene(engine);
 
 // Hide spinner when scene is ready
 scene.onReadyObservable.addOnce(() => {
-  spinner.remove();
+  spinner?.remove();
 });
 
 // Enable inspector only in development (excluded from production build)
