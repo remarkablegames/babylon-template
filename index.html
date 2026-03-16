@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Babylon Template" />
+    <link rel="stylesheet" href="/src/style.css" />
 
     <!--
       manifest.webmanifest provides metadata used when your web app is installed on a
@@ -13,40 +14,6 @@
     -->
     <link rel="manifest" href="/manifest.webmanifest" />
     <title>Babylon Template | remarkablegames</title>
-    <style>
-      * {
-        border: 0;
-        margin: 0;
-        padding: 0;
-      }
-      html,
-      body,
-      canvas {
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-      #spinner {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100px;
-        height: 100px;
-        border: 4px solid #ddd;
-        border-top: 4px solid #3498db;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-      }
-      @keyframes spin {
-        0% {
-          transform: translate(-50%, -50%) rotate(0deg);
-        }
-        100% {
-          transform: translate(-50%, -50%) rotate(360deg);
-        }
-      }
-    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
