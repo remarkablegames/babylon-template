@@ -17,7 +17,7 @@
   "homepage": "https://remarkablegames.org/babylon-template/",
   "dependencies": {
     "@babylonjs/core": "8.55.1",
-    "@babylonjs/inspector": "8.55.1"
+    "@babylonjs/inspector": "8.55.2"
   },
   "devDependencies": {
     "@commitlint/cli": "20.5.0",
