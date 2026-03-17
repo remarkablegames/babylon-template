@@ -17,7 +17,12 @@
   </head>
   <body class="h-full w-full select-none">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="spinner" role="progressbar" aria-label="Loading"></div>
+    <div
+      id="spinner"
+      role="progressbar"
+      aria-label="Loading"
+      class="pointer-events-none fixed inset-0 m-auto h-28 w-28 animate-spin rounded-full border-4 border-neutral-300 border-t-blue-500"
+    ></div>
     <canvas id="game" class="h-full w-full outline-none"></canvas>
     <script type="module" src="/src/main.ts"></script>
 
