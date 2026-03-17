@@ -1,7 +1,6 @@
 import { createEngine, createScene } from './core';
-import { InputSystem, RenderSystem } from './systems';
 
-const canvas = document.querySelector<HTMLCanvasElement>('canvas');
+const canvas = document.querySelector<HTMLCanvasElement>('#game');
 const spinner = document.querySelector<HTMLDivElement>('#spinner');
 
 if (!canvas) {
@@ -23,13 +22,13 @@ if (import.meta.env.DEV) {
   });
 }
 
-new InputSystem(scene);
-const renderSystem = new RenderSystem(engine, scene);
+function startRenderLoop() {
+  engine.runRenderLoop(() => {
+    scene.render();
+  });
+}
 
-renderSystem.startRenderLoop(() => {
-  // Update systems
-  // Add your game update logic here
-});
+startRenderLoop();
 
 // Pause when tab is hidden
 document.addEventListener('visibilitychange', () => {
@@ -37,7 +36,5 @@ document.addEventListener('visibilitychange', () => {
     engine.stopRenderLoop();
     return;
   }
-  renderSystem.startRenderLoop(() => {
-    // Update logic
-  });
+  startRenderLoop();
 });
