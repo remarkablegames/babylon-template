@@ -1,7 +1,7 @@
 import { createEngine, createScene } from './core';
+import { Game } from './game';
 
-const canvas = document.querySelector<HTMLCanvasElement>('#game');
-const spinner = document.querySelector<HTMLDivElement>('#spinner');
+const canvas = document.querySelector('canvas');
 
 if (!canvas) {
   throw new Error('Game canvas not found');
@@ -9,10 +9,13 @@ if (!canvas) {
 
 const engine = createEngine(canvas);
 const scene = createScene(engine);
+const game = new Game(engine, scene);
+
+game.start();
 
 // Hide spinner when scene is ready
 scene.onReadyObservable.addOnce(() => {
-  spinner?.remove();
+  document.getElementById('spinner')?.remove();
 });
 
 // Enable inspector only in development (excluded from production build)
@@ -22,19 +25,11 @@ if (import.meta.env.DEV) {
   });
 }
 
-function startRenderLoop() {
-  engine.runRenderLoop(() => {
-    scene.render();
-  });
-}
-
-startRenderLoop();
-
 // Pause when tab is hidden
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
-    engine.stopRenderLoop();
-    return;
+    game.pause();
+  } else {
+    game.resume();
   }
-  startRenderLoop();
 });
