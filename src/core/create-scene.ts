@@ -7,7 +7,7 @@ import { Vector3 } from '@babylonjs/core/Maths/math.vector';
 import { MeshBuilder } from '@babylonjs/core/Meshes/meshBuilder';
 import { Scene } from '@babylonjs/core/scene';
 
-import { createCamera } from './createCamera';
+import { createCamera } from './create-camera';
 
 /**
  * Creates the default scene with a rotating cube

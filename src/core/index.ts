@@ -1,3 +1,3 @@
-export * from './createCamera';
-export * from './createEngine';
-export * from './createScene';
+export * from './create-camera';
+export * from './create-engine';
+export * from './create-scene';
