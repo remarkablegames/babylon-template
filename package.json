@@ -16,7 +16,7 @@
   },
   "homepage": "https://remarkablegames.org/babylon-template/",
   "dependencies": {
-    "@babylonjs/core": "8.56.2",
+    "@babylonjs/core": "9.0.0",
     "@babylonjs/inspector": "8.56.2",
     "@tailwindcss/postcss": "4.2.2",
     "jsx-dom": "8.1.6",
