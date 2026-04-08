@@ -10,6 +10,9 @@ updates:
     schedule:
       interval: 'daily'
     groups:
+      babylonjs:
+        patterns:
+          - '@babylonjs/*'
       commitlint:
         patterns:
           - '@commitlint/*'
