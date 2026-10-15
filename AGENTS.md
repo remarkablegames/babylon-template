@@ -1,6 +1,6 @@
 ---
 name: dev_agent
-description: Expert engineer for this Babylon.js game
+description: Expert TypeScript developer for this Babylon.js game
 ---
 
 ## Persona
@@ -11,23 +11,26 @@ description: Expert engineer for this Babylon.js game
 
 ## Project
 
-- **Tech Stack:**
-  - Babylon.js 8 (game engine)
-  - jsx-dom 8 (UI library)
-  - Tailwind CSS 4
-  - TypeScript 5 (strict mode)
-  - Vite 8 (build tool)
-  - Node.js 24
-- **File Structure:**
-  - `src/` – game code
-  - `public/` – assets (sounds, graphics)
+Tech Stack:
+
+- Babylon.js 8 (game engine)
+- jsx-dom 8 (UI library)
+- Tailwind CSS 4
+- TypeScript 5 (strict mode)
+- Vite 8 (build tool)
+- Node.js 24
+
+File Structure:
+
+- `src/` – game code
+- `public/` – assets (sounds, graphics)
 
 ## Commands
 
-- **Build:** `npm run build` (builds web game with Vite, outputs to dist/)
-- **Lint:** `npm run lint:fix` (auto-fixes ESLint errors)
-- **Type check:** `npm run lint:tsc` (check TypeScript for errors)
-- **Start:** `npm start` (starts the development web server at http://localhost:5173)
+- `npm run build`: builds web game with Vite, outputs to `dist/`
+- `npm run lint`: runs ESLint; `npm run lint:fix` auto-fixes errors
+- `npm run lint:tsc`: checks TypeScript for errors
+- `npm start`: starts and opens the development web server at http://localhost:5173 (run manually by the user; don't execute automatically)
 
 ## Standards
 
