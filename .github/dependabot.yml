@@ -18,8 +18,7 @@ updates:
           - '@commitlint/*'
       eslint:
         patterns:
-          - '@eslint/*'
-          - 'eslint*'
+          - '*eslint*'
           - prettier
 
   - package-ecosystem: 'github-actions'
