@@ -88,7 +88,7 @@ Your game is ready to be deployed!
 
 Builds the game and compresses the contents into a ZIP archive in the `dist` folder.
 
-Your game can be uploaded to your server, [itch.io](https://itch.io/), [newgrounds](https://www.newgrounds.com/), etc.
+Your game can be uploaded to your server, [itch.io](https://itch.io/), etc.
 
 ## License
 
