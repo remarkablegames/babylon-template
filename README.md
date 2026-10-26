@@ -9,9 +9,15 @@
 
 <kbd>babylon-template</kbd> is a template for building [Babylon.js](https://github.com/BabylonJS/Babylon.js) games.
 
-Play the game on:
+Play in your browser:
 
 - [remarkablegames](https://remarkablegames.org/babylon-template/)
+
+Or download for desktop:
+
+- [Windows](https://github.com/remarkablegames/babylon-template/releases/latest/download/windows.zip)
+- [macOS](https://github.com/remarkablegames/babylon-template/releases/latest/download/macos.zip)
+- [Linux](https://github.com/remarkablegames/babylon-template/releases/latest/download/linux.zip)
 
 ## Prerequisites
 
@@ -53,16 +59,6 @@ Update the files:
 - [ ] `package.json`
 - [ ] `public/logo.svg`
 - [ ] `public/manifest.webmanifest`
-
-## Environment Variables
-
-Update the environment variables:
-
-```sh
-cp .env .env.local
-```
-
-Update the **Secrets** in the repository **Settings**.
 
 ## Available Scripts
 

@@ -47,7 +47,7 @@
     <title>Babylon Template | remarkablegames</title>
   </head>
   <body class="h-full w-full select-none">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to play this game.</noscript>
     <div
       id="spinner"
       role="progressbar"
@@ -56,20 +56,5 @@
     ></div>
     <canvas class="h-full w-full outline-none"></canvas>
     <script type="module" src="src/main.ts"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script>
-      window['ga-disable-%VITE_GOOGLE_ANALYTICS_ID%'] = %DEV%;
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () {
-        dataLayer.push(arguments);
-      };
-      gtag('js', new Date());
-      gtag('config', '%VITE_GOOGLE_ANALYTICS_ID%');
-    </script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=%VITE_GOOGLE_ANALYTICS_ID%"
-    ></script>
   </body>
 </html>
