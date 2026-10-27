@@ -1,8 +1,7 @@
 {
   "name": "babylon-template",
+  "private": true,
   "version": "1.0.0-alpha",
-  "description": "Babylon Template",
-  "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
     "build": "npm run clean && vite build",
     "bundle": "bash scripts/bundle.sh",
@@ -16,8 +15,8 @@
   },
   "homepage": "https://remarkablegames.org/babylon-template/",
   "dependencies": {
-    "@babylonjs/core": "9.32.0",
-    "@babylonjs/inspector": "9.32.0",
+    "@babylonjs/core": "9.32.1",
+    "@babylonjs/inspector": "9.32.1",
     "jsx-dom": "8.1.6",
     "tailwindcss": "4.3.3"
   },
@@ -35,10 +34,8 @@
     "prettier": "3.9.10",
     "prettier-plugin-tailwindcss": "0.8.1",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.72.0",
+    "typescript-eslint": "8.72.1",
     "vite": "8.3.5",
     "vite-plugin-html": "3.2.2"
-  },
-  "private": true,
-  "license": "MIT"
+  }
 }
