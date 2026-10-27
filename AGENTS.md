@@ -5,7 +5,7 @@ description: Expert TypeScript developer for this Babylon.js game
 
 ## Guidance
 
-- Follow the Babylon.js patterns and conventions
+- Follow Babylon.js patterns and conventions
 - Keep game logic clear and avoid unnecessary duplication
 - Make changes runnable and easy to playtest
 
