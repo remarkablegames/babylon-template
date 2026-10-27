@@ -2,7 +2,7 @@ import type { Engine } from '@babylonjs/core/Engines/engine';
 import type { Scene } from '@babylonjs/core/scene';
 
 /**
- * Game - Orchestrates all game systems and manages the update loop.
+ * Orchestrates all game systems and manages the update loop.
  */
 export class Game {
   private engine: Engine;
