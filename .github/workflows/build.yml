@@ -39,7 +39,7 @@ jobs:
           start: npm start
           wait-on: http://localhost:5173
 
-      - name: Build app
+      - name: Build for GitHub Pages
         run: npm run build -- --base /${{ github.event.repository.name }}/
 
       - name: Inject Google Analytics
@@ -49,7 +49,7 @@ jobs:
           html-path: dist/index.html
           measurement-id: ${{ secrets.GOOGLE_ANALYTICS_ID }}
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         if: github.ref_name == 'master'
         uses: remarkablemark/gitploy-action@v1
         with:
