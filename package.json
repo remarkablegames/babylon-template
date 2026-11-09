@@ -14,8 +14,8 @@
     "start": "vite --open"
   },
   "dependencies": {
-    "@babylonjs/core": "9.33.2",
-    "@babylonjs/inspector": "9.33.2",
+    "@babylonjs/core": "9.34.0",
+    "@babylonjs/inspector": "9.34.0",
     "jsx-dom": "8.1.6",
     "tailwindcss": "4.3.4"
   },
